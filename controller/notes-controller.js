@@ -1,0 +1,1 @@
+export const notesController = (req, res) => res.send("Hello");

@@ -1,5 +1,7 @@
-const express = require('express');
+import notesRoutes from "./routes/notes-routes.js";
+
+import express from "express";
 const app = express ();
-app.get('/', (req, res) => res.send('Hello World!!'));
-app.get('/abcd', (req, res) => res.send('hi from ritesh'));
+
+app.use(notesRoutes);
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
